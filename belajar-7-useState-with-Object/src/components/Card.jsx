@@ -5,13 +5,13 @@ function Card({ children }) {
 function Title({ children }) {
     return (
         <div className='p-4 border-b'>
-            <h1 className='text-2xl font-semibold'>{children}</h1>
+            <h1 className='text-xl font-semibold text-slate-900'>{children}</h1>
         </div>
     );
 }
 
 function Body({ children }) {
-    return <div className='leading-relaxed p-4 '>{children}</div>;
+    return <div className='leading-relaxed p-4 text-slate-900'>{children}</div>;
 }
 
 function Footer({ children }) {
