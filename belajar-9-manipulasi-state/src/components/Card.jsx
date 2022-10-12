@@ -15,7 +15,7 @@ function Body({ children }) {
 }
 
 function Footer({ children }) {
-    return <h1 className='bg-slate-50 p-4'>{children}</h1>;
+    return <h1 className='bg-slate-50 p-4 text-slate-900'>{children}</h1>;
 }
 Card.Title = Title;
 Card.Body = Body;

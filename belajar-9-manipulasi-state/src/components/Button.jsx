@@ -8,7 +8,7 @@ export default function Button(props) {
             type={type}
             className={clsx(
                 className,
-                `${className} [&>svg]:w-6 [&>svg]:h-5 [&>svg]:stroke-1 flex items-center gap-x-1  text-white px-4 py-2 rounded`
+                `${className} [&>svg]:w-6 [&>svg]:h-5 [&>svg]:stroke-1 whitespace-nowrap inline-flex justify-center items-center gap-x-1  text-white px-4 h-10 rounded`
             )}
         >
             {text || children}
