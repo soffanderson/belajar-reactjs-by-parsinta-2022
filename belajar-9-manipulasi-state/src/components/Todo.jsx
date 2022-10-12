@@ -14,7 +14,7 @@ export default function Todo() {
             {
                 id: Math.floor(Math.random() * Date.now()),
                 name: newTask,
-                completed: false,
+                completed: true,
             },
         ]);
 
@@ -26,7 +26,7 @@ export default function Todo() {
             if (id === task.id) {
                 return {
                     ...task,
-                    completed: true,
+                    completed: !task.completed,
                 };
             }
 
@@ -64,7 +64,7 @@ export default function Todo() {
 
                                 <div className='flex items-center gap-x-2'>
                                     <button onClick={() => handleCompleteTask(task.id)} className='px-2 py-1 border rounded-md border-gray text-xs'>
-                                        complete
+                                        Mark as {task.completed ? 'complete' : 'incomplete'}
                                     </button>
                                     <button onClick={() => handleRemoveTask(task.id)} className='px-2 py-1 border rounded-md border-red-600 text-xs'>
                                         remove
