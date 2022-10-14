@@ -2,6 +2,7 @@ import { PlaceContentCenter } from './components/PlaceContentCenter';
 import { useRef, useState } from 'react';
 import Card from './components/Card';
 import Button from './components/Button';
+import Input from './components/Input';
 
 function App() {
     // const [tick, setTick] = useState(0);
@@ -19,7 +20,8 @@ function App() {
             <Card>
                 <Card.Title>useRef Hooks</Card.Title>
                 <Card.Body>
-                    <input ref={inputRef} className='border border-slate-700 my-2' />
+                    <Input placeholder='email' isFocused className='border border-slate-700 my-2' />
+                    <Input placeholder='passworld' className='border border-slate-700 my-2' />
                     <Button onClick={hanldeClick}>Tick</Button>
                 </Card.Body>
                 {/* <Card.Footer>You clicked {tick} times.</Card.Footer> */}
@@ -29,3 +31,5 @@ function App() {
 }
 
 export default App;
+
+// useRef dugunakan untuk jika kita tidak ingin rerender component melainkan hanya bagian tertetnu
